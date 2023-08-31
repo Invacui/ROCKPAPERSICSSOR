@@ -1,5 +1,6 @@
 const addBoxButton = document.getElementById('togglerulebook');
 const hiddenBox = document.querySelector('.rulebook.hidden');
+const crossbtn = document.getElementById('cross');
 
 const addBoxButton1 = document.getElementById('addBox');
 const hiddenBox1 = document.querySelector('.sub-box.hidden');
@@ -25,11 +26,14 @@ addBoxButton.addEventListener('click',() =>{
     }else{
         hiddenBox.classList.add('hidden');  
     }
+    //Cross btn action to close rulesbook
+    crossbtn.addEventListener('click',function() {
+        hiddenBox.classList.add('hidden');  
+    });
 });
 
 
 //result generator
-
 buttons.forEach(button => {
     button.addEventListener('click', playGame); //Invoke this event
     button.addEventListener('click', function () {
