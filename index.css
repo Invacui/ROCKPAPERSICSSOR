@@ -27,7 +27,7 @@ button:active {
 }
 
 body {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: var(--bgc);
     display: flex;
     justify-content: center;
@@ -51,13 +51,13 @@ header {
     overflow: hidden;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .headcontent {
     display: flex;
     align-items: center;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 #rps p {
@@ -68,12 +68,12 @@ header {
     font-style: normal;
     font-weight: 400;
     letter-spacing: 4px;
-    border: 2px solid rgb(0, 255, 42);
+    /* border: 2px solid rgb(0, 255, 42); */
 }
 
 #hbox {
     overflow: hidden;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -86,7 +86,7 @@ header {
     flex-shrink: 0;
     background-color: #FFF;
     border-radius: 13px;
-    border: 2px solid rgb(0, 255, 42);
+    /* border: 2px solid rgb(0, 255, 42); */
     width: 125px;
     padding: 0%;
     margin-left: 1em;
@@ -102,7 +102,7 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.7px;
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 
 .hhscore {
@@ -114,7 +114,7 @@ header {
     font-size: 68px;
     font-style: normal;
     font-weight: 700;
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 
 .rulesandnext {
@@ -122,7 +122,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
     width: 350px;
     height: auto;
     position: absolute;
@@ -184,7 +184,7 @@ header {
 .container {
     display: flex;
     justify-content: end;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 80%;
 }
 
@@ -213,7 +213,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin-top: 20REM;
     width: 50%;
 }
@@ -224,7 +224,7 @@ header {
     display: flex;
     justify-content: baseline;
     width: fit-content;
-    border: 10px solid yellow;
+    /* border: 10px solid yellow; */
     position: relative;
     margin-bottom: 5vh;
     display: block;
@@ -233,7 +233,7 @@ header {
 
 
 .triangle {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 0;
     height: 0;
     border-left: 200px solid transparent;
@@ -247,7 +247,7 @@ header {
     bottom: 13%;
     right: calc(10%);
     align-self: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 0;
     height: 0;
     border-left: 160px solid transparent;
@@ -303,14 +303,14 @@ button.number {
 }
 
 .resultgen {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
 }
 
 .resultgenchoice {
     display: flex;
     justify-content: space-between;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 10px;
 }
 
@@ -322,7 +322,7 @@ button.number {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.7px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 10px 30px;
 }
 
@@ -333,7 +333,7 @@ button.number {
     align-items: center;
     height: auto;
     width: auto;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     position: relative;
 
 }
@@ -369,7 +369,7 @@ button.number {
     justify-content: center;
     align-items: center;
     align-self: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     justify-content: center;
 }
 
@@ -385,6 +385,7 @@ button.number {
 }
 
 .addBox #status1 {
+    margin-top: 10px;
     color: #FFF;
     text-align: center;
     font-family: Roboto;
@@ -396,10 +397,11 @@ button.number {
 }
 
 #addBox {
-
+    margin-top: 10px;
     width: 174px;
     height: 44px;
     border-radius: 9px;
+    border-color: inherit;
     background: #FFF;
     color: #6B6B6B;
     font-family: Arial, Helvetica, sans-serif;
@@ -483,7 +485,7 @@ button.number {
 
 /*Final page CSS*/
 .finalbodypage {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
 
 }
@@ -492,22 +494,24 @@ button.number {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding: 10px;
 }
 #Trophy{
+margin-top: -100px;
+margin-left: -50px;
 width: 100%;
-height:350px ;}
+height:50vh ;}
 #aa1 {
-    margin-bottom: 10px;
-    border: 2px solid white;
+    margin-bottom: 30px;
+    /* border: 2px solid white; */
     width: auto;
     height: 86px;
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
-    font-size: 91px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -517,11 +521,11 @@ height:350px ;}
 #aa2 {
 
     margin-bottom: 10px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
-    font-size: 41px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -529,7 +533,14 @@ height:350px ;}
 }
 
 #aa3 {
-
+    
     padding: 10px;
-    border: 2px solid white;
+    
+    /* border: 2px solid white; */
+}
+#aa3 button{
+    font-size: x-large;
+    width: 200px;
+    height: 70px;
+    border-color: #fff;
 }
