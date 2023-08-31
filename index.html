@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>
+        FlexBox
+    </title>
+
+    <meta name="viweport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div id="headbox">
+            <div class="headcontent" id="rps">
+                <p>ROCK<br>PAPER<br>SCISSORS</p>
+            </div>
+            <div class="headcontent" id="hbox">
+                <div class="score" id="scorec">
+                    <span id="scorecname">
+                        <p class="hscore">
+                            COMPUTER <br>
+                            SCORE
+                        </p>
+                        <p class="hhscore" id="scorecomp">
+                            0
+                        </p>
+                    </span>
+                </div>
+
+                <div class="score" id="scoreu">
+                    <span id="scoreuname">
+                        <p class="hscore">
+                            YOUR <br>
+                            SCORE
+                        </p>
+                        <p class="hhscore" id="scoreuser">
+                            0
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="gamebox">
+        <div class="mumma hidden">
+            <div class="triangle"></div>
+            <div class="triangle1"></div>
+            <button class="number top " id="rock"></button>
+            <button class="number bottom-left" id="paper"></button>
+            <button class="number bottom-right" id="scissors"></button>
+        </div>
+        <div class="mainresbox">
+            <div class="resultgen">
+                <div class="resultgenchoice">
+                    <div class="rc" id="yourchoice">YOU PICKED</div>
+                    <div class="rc" id="compchoice">PC PICKED</div>
+                </div>
+                <div class="circleanimate">
+                    <div class="pulse onepulse">
+                        <div class="main one"></div>
+                        <span id="firstspan"style="--i: 1;"></span>
+                        <span id="firstspan"style="--i: 2;"></span>
+                        <span id="firstspan"style="--i: 3;"></span>
+                    </div>
+                    <div class="addBox hidden">
+                        <div id="status"></div>
+                        <div id="status1">AGAINST PC</div>
+                        <div>
+                        <button id="addBox">Play Again</button>
+                    </div>
+                    </div>
+                    <div class="pulse twopulse">
+                        <div class="main two"></div>
+                        <span id="secondspan"style="--i: 1;"></span>
+                        <span id="secondspan"style="--i: 2;"></span>
+                        <span id="secondspan"style="--i: 3;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rulesandnext">
+        <div class="rulebook hidden">
+            <button id=cross>X</button>
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+        <div class="container">
+            <button class="sub-box" id="togglerulebook">Rules</button>
+            <a href="final.html">
+                <button class="sub-box hidden">Next</button>
+            </a>
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
