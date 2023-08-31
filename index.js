@@ -11,8 +11,15 @@ const result = document.getElementById('yourchoice');
 const mainElement = document.querySelector(".main");
 
 ///score changer
+let savedCompsScore = localStorage.getItem('compsScore');
+let savedUsersScore = localStorage.getItem('usersScore');
+
 let comps = document.getElementById('scorecomp');
 let users = document.getElementById('scoreuser');
+
+// Set initial scores from localStorage or default to 0
+comps.textContent = savedCompsScore !== null ? savedCompsScore : 0;
+users.textContent = savedUsersScore !== null ? savedUsersScore : 0;
 
 //toggle hiding of mumma and resgen circles
 const hidemumma = document.querySelector('.mumma');
@@ -102,6 +109,8 @@ addBoxButton1.addEventListener('click',() =>{
     // Update the scoreboard
     if (winner === "YOU WIN") {
         users.textContent = parseInt(users.textContent) + 1;
+    // Store the updated users' score in localStorage
+    localStorage.setItem('usersScore', users.textContent);
         console.log(`${parseInt(users.textContent)}`)
         if (parseInt(users.textContent) === 5) {
             hiddenBox1.classList.remove('hidden'); // Unhide hiddenBox1 when users' value becomes 2
@@ -114,6 +123,8 @@ addBoxButton1.addEventListener('click',() =>{
          }
     } else if (winner === "YOU LOST") {
         comps.textContent = parseInt(comps.textContent) + 1;
+    // Store the updated comps' score in localStorage
+    localStorage.setItem('compsScore', comps.textContent);
         toggleAnimation();
         function toggleAnimation() {
             console.log("toggled");
